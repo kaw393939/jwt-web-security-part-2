@@ -1,0 +1,436 @@
+2022-07-16 22:05:23,936 [ERROR] app: Exception on /register/ [GET]
+Traceback (most recent call last):
+  File "/Users/keithwilliams/PycharmProjects/heroku_deploy_flask/venv/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/keithwilliams/PycharmProjects/heroku_deploy_flask/venv/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/keithwilliams/PycharmProjects/heroku_deploy_flask/venv/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/keithwilliams/PycharmProjects/heroku_deploy_flask/venv/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/keithwilliams/PycharmProjects/heroku_deploy_flask/app/authentication/__init__.py", line 12, in register
+    result = db.session.query(User).count()
+AttributeError: module 'app.db' has no attribute 'session'
+2022-07-16 22:05:47,700 [ERROR] app: Exception on /register/ [GET]
+Traceback (most recent call last):
+  File "/Users/keithwilliams/PycharmProjects/heroku_deploy_flask/venv/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/keithwilliams/PycharmProjects/heroku_deploy_flask/venv/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/keithwilliams/PycharmProjects/heroku_deploy_flask/venv/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/keithwilliams/PycharmProjects/heroku_deploy_flask/venv/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/keithwilliams/PycharmProjects/heroku_deploy_flask/app/authentication/__init__.py", line 12, in register
+    result = db.query(User).count()
+AttributeError: module 'app.db' has no attribute 'query'
+2022-07-16 22:06:23,556 [ERROR] app: Exception on /register/ [GET]
+Traceback (most recent call last):
+  File "/Users/keithwilliams/PycharmProjects/heroku_deploy_flask/venv/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/keithwilliams/PycharmProjects/heroku_deploy_flask/venv/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/keithwilliams/PycharmProjects/heroku_deploy_flask/venv/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/keithwilliams/PycharmProjects/heroku_deploy_flask/venv/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/keithwilliams/PycharmProjects/heroku_deploy_flask/app/authentication/__init__.py", line 12, in register
+    result = db.session.execute.query(User).count()
+AttributeError: module 'app.db' has no attribute 'session'
+2022-07-16 22:08:22,059 [ERROR] app: Exception on /register/ [GET]
+Traceback (most recent call last):
+  File "/Users/keithwilliams/PycharmProjects/heroku_deploy_flask/venv/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/keithwilliams/PycharmProjects/heroku_deploy_flask/venv/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/keithwilliams/PycharmProjects/heroku_deploy_flask/venv/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/keithwilliams/PycharmProjects/heroku_deploy_flask/venv/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/keithwilliams/PycharmProjects/heroku_deploy_flask/app/authentication/__init__.py", line 12, in register
+    result = User.query().count()
+TypeError: 'BaseQuery' object is not callable
+2022-07-27 01:15:21,529 [ERROR] app: Exception on /pets/ [GET]
+Traceback (most recent call last):
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask/views.py", line 84, in view
+    return current_app.ensure_sync(self.dispatch_request)(*args, **kwargs)
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask/views.py", line 158, in dispatch_request
+    return current_app.ensure_sync(meth)(*args, **kwargs)
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/webargs/core.py", line 594, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask_smorest/arguments.py", line 82, in wrapper
+    return func(*f_args, **f_kwargs)
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask_smorest/response.py", line 90, in wrapper
+    func(*args, **kwargs)
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/app/apiBp/__init__.py", line 23, in get
+    return Pet.get(filters=args)
+NameError: name 'Pet' is not defined
+2022-07-27 01:16:55,341 [ERROR] app: Exception on /pets/ [GET]
+Traceback (most recent call last):
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask/views.py", line 84, in view
+    return current_app.ensure_sync(self.dispatch_request)(*args, **kwargs)
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask/views.py", line 158, in dispatch_request
+    return current_app.ensure_sync(meth)(*args, **kwargs)
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/webargs/core.py", line 594, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask_smorest/arguments.py", line 82, in wrapper
+    return func(*f_args, **f_kwargs)
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask_smorest/response.py", line 90, in wrapper
+    func(*args, **kwargs)
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/app/apiBp/__init__.py", line 23, in get
+    for city in self.cities:
+NameError: name 'Pet' is not defined
+2022-07-27 01:30:15,556 [ERROR] app: Exception on /pets/ [GET]
+Traceback (most recent call last):
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask/views.py", line 84, in view
+    return current_app.ensure_sync(self.dispatch_request)(*args, **kwargs)
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask/views.py", line 158, in dispatch_request
+    return current_app.ensure_sync(meth)(*args, **kwargs)
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/webargs/core.py", line 594, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask_smorest/arguments.py", line 82, in wrapper
+    return func(*f_args, **f_kwargs)
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask_smorest/response.py", line 90, in wrapper
+    func(*args, **kwargs)
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/app/apiBp/__init__.py", line 49, in get
+    return Pet.get(filters=args)
+TypeError: Pet.get() got an unexpected keyword argument 'filters'
+2022-07-27 01:32:00,556 [ERROR] app: Exception on /pets/ [GET]
+Traceback (most recent call last):
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask/views.py", line 84, in view
+    return current_app.ensure_sync(self.dispatch_request)(*args, **kwargs)
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask/views.py", line 158, in dispatch_request
+    return current_app.ensure_sync(meth)(*args, **kwargs)
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/webargs/core.py", line 594, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask_smorest/arguments.py", line 82, in wrapper
+    return func(*f_args, **f_kwargs)
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask_smorest/response.py", line 90, in wrapper
+    func(*args, **kwargs)
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/app/apiBp/__init__.py", line 49, in get
+    return Pet.get()
+TypeError: Pet.get() missing 2 required positional arguments: 'self' and 'id'
+2022-07-27 01:33:29,957 [ERROR] app: Exception on /pets/ [GET]
+Traceback (most recent call last):
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask/views.py", line 84, in view
+    return current_app.ensure_sync(self.dispatch_request)(*args, **kwargs)
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask/views.py", line 158, in dispatch_request
+    return current_app.ensure_sync(meth)(*args, **kwargs)
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/webargs/core.py", line 594, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask_smorest/arguments.py", line 82, in wrapper
+    return func(*f_args, **f_kwargs)
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask_smorest/response.py", line 90, in wrapper
+    func(*args, **kwargs)
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/app/apiBp/__init__.py", line 49, in get
+    def get(self, args):
+TypeError: Pet.get() missing 2 required positional arguments: 'self' and 'id'
+2022-07-27 01:33:54,374 [ERROR] app: Exception on /pets/ [GET]
+Traceback (most recent call last):
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask/views.py", line 84, in view
+    return current_app.ensure_sync(self.dispatch_request)(*args, **kwargs)
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask/views.py", line 158, in dispatch_request
+    return current_app.ensure_sync(meth)(*args, **kwargs)
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/webargs/core.py", line 594, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask_smorest/arguments.py", line 82, in wrapper
+    return func(*f_args, **f_kwargs)
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask_smorest/response.py", line 90, in wrapper
+    func(*args, **kwargs)
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/app/apiBp/__init__.py", line 51, in get
+    return Pet.get()
+TypeError: Pet.get() missing 1 required positional argument: 'self'
+2022-07-27 02:04:20,762 [ERROR] app: Exception on /swagger-ui [GET]
+Traceback (most recent call last):
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask_smorest/spec/__init__.py", line 126, in _openapi_swagger_ui
+    return flask.render_template(
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask/templating.py", line 147, in render_template
+    ctx.app.update_template_context(context)
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask/app.py", line 756, in update_template_context
+    context.update(func())
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask_login/utils.py", line 392, in _user_context_processor
+    return dict(current_user=_get_user())
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask_login/utils.py", line 359, in _get_user
+    current_app.login_manager._load_user()
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask_login/login_manager.py", line 338, in _load_user
+    raise Exception(
+Exception: Missing user_loader or request_loader. Refer to http://flask-login.readthedocs.io/#how-it-works for more info.
+2022-07-27 03:13:34,287 [ERROR] app: Exception on /register [POST]
+Traceback (most recent call last):
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/webargs/core.py", line 594, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask_smorest/arguments.py", line 82, in wrapper
+    return func(*f_args, **f_kwargs)
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask_smorest/response.py", line 90, in wrapper
+    func(*args, **kwargs)
+TypeError: register() takes 0 positional arguments but 1 was given
+2022-07-27 03:14:51,001 [ERROR] app: Exception on /register [POST]
+Traceback (most recent call last):
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/webargs/core.py", line 594, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask_smorest/arguments.py", line 82, in wrapper
+    return func(*f_args, **f_kwargs)
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask_smorest/response.py", line 90, in wrapper
+    func(*args, **kwargs)
+TypeError: register() takes 0 positional arguments but 1 was given
+2022-07-27 03:16:48,930 [ERROR] app: Exception on /register [POST]
+Traceback (most recent call last):
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/webargs/core.py", line 594, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask_smorest/arguments.py", line 82, in wrapper
+    return func(*f_args, **f_kwargs)
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask_smorest/response.py", line 90, in wrapper
+    func(*args, **kwargs)
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/app/authentication/__init__.py", line 35, in register
+    username = data['data']['username']
+KeyError: 'data'
+2022-07-27 03:17:31,410 [ERROR] app: Exception on /register [POST]
+Traceback (most recent call last):
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/webargs/core.py", line 594, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask_smorest/arguments.py", line 82, in wrapper
+    return func(*f_args, **f_kwargs)
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask_smorest/response.py", line 90, in wrapper
+    func(*args, **kwargs)
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/app/authentication/__init__.py", line 36, in register
+    username = data['data']['username']
+KeyError: 'data'
+2022-07-27 03:18:12,625 [ERROR] app: Exception on /register [POST]
+Traceback (most recent call last):
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/webargs/core.py", line 594, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask_smorest/arguments.py", line 82, in wrapper
+    return func(*f_args, **f_kwargs)
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask_smorest/response.py", line 90, in wrapper
+    func(*args, **kwargs)
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/app/authentication/__init__.py", line 36, in register
+KeyError: 'data'
+2022-07-27 03:18:28,537 [ERROR] app: Exception on /register [POST]
+Traceback (most recent call last):
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/webargs/core.py", line 594, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask_smorest/arguments.py", line 82, in wrapper
+    return func(*f_args, **f_kwargs)
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask_smorest/response.py", line 90, in wrapper
+    func(*args, **kwargs)
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/app/authentication/__init__.py", line 34, in register
+    username = data['data']['username']
+KeyError: 'data'
+2022-07-27 03:41:02,623 [ERROR] app: Exception on /register [POST]
+Traceback (most recent call last):
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/webargs/core.py", line 594, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask_smorest/arguments.py", line 82, in wrapper
+    return func(*f_args, **f_kwargs)
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask_smorest/response.py", line 90, in wrapper
+    func(*args, **kwargs)
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/app/authentication/__init__.py", line 34, in register
+    print('test ' + kwargs)
+TypeError: can only concatenate str (not "dict") to str
+2022-07-27 05:12:26,475 [ERROR] app: Exception on /user_info [GET]
+Traceback (most recent call last):
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask_smorest/blueprint.py", line 298, in wrapper
+    return func(*f_args, **f_kwargs)
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask_jwt_extended/view_decorators.py", line 154, in decorator
+    return current_app.ensure_sync(fn)(*args, **kwargs)
+TypeError: protected() missing 1 required positional argument: 'data'
+2022-07-27 05:13:01,722 [ERROR] app: Exception on /user_info [GET]
+Traceback (most recent call last):
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask_smorest/blueprint.py", line 298, in wrapper
+    return func(*f_args, **f_kwargs)
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask_jwt_extended/view_decorators.py", line 154, in decorator
+    return current_app.ensure_sync(fn)(*args, **kwargs)
+TypeError: protected() missing 1 required positional argument: 'data'
+2022-07-27 05:13:03,918 [ERROR] app: Exception on /user_info [GET]
+Traceback (most recent call last):
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask_smorest/blueprint.py", line 298, in wrapper
+    return func(*f_args, **f_kwargs)
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask_jwt_extended/view_decorators.py", line 154, in decorator
+    return current_app.ensure_sync(fn)(*args, **kwargs)
+TypeError: protected() missing 1 required positional argument: 'data'
+2022-07-27 06:17:13,173 [ERROR] app: Exception on /geography/countries [POST]
+Traceback (most recent call last):
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask/views.py", line 84, in view
+    return current_app.ensure_sync(self.dispatch_request)(*args, **kwargs)
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask/views.py", line 158, in dispatch_request
+    return current_app.ensure_sync(meth)(*args, **kwargs)
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask_smorest/etag.py", line 104, in wrapper
+    resp = func(*args, **kwargs)
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/webargs/core.py", line 582, in wrapper
+    parsed_args = self.parse(
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/webargs/core.py", line 408, in parse
+    data = self._process_location_data(
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/webargs/core.py", line 362, in _process_location_data
+    data = schema.load(preprocessed_data, **load_kwargs)
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/marshmallow_sqlalchemy/load_instance_mixin.py", line 93, in load
+    raise ValueError("Deserialization requires a session")
+ValueError: Deserialization requires a session
+2022-07-27 06:25:06,566 [ERROR] app: Exception on /geography/countries [POST]
+Traceback (most recent call last):
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask/views.py", line 84, in view
+    return current_app.ensure_sync(self.dispatch_request)(*args, **kwargs)
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask/views.py", line 158, in dispatch_request
+    return current_app.ensure_sync(meth)(*args, **kwargs)
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask_smorest/etag.py", line 104, in wrapper
+    resp = func(*args, **kwargs)
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/webargs/core.py", line 594, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask_smorest/arguments.py", line 82, in wrapper
+    return func(*f_args, **f_kwargs)
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask_smorest/response.py", line 90, in wrapper
+    func(*args, **kwargs)
+  File "/Users/keithwilliams/PycharmProjects/jwt-web-security-part-2/venv/lib/python3.10/site-packages/flask_smorest/blueprint.py", line 298, in wrapper
+    return func(*f_args, **f_kwargs)
+TypeError: jwt_required.<locals>.wrapper() takes 1 positional argument but 2 were given
