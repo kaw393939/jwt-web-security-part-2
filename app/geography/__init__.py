@@ -60,7 +60,7 @@ class Countries(MethodView):
     @geography.etag
     @geography.response(200, CitySchema(many=True))
     def get(self):
-        """List Countries"""
+        """List Cities"""
         ret = City.query.all()
         return ret
 
