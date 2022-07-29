@@ -38,6 +38,7 @@ class Countries(MethodView):
     def get(self):
         """List Countries"""
         ret = Country.query.all()
+
         return ret
 
     @geography.etag

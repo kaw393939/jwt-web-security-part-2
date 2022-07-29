@@ -14,9 +14,11 @@ your final project, I am combining this lesson with the final project. You have 
 unit and options to complete for your final project. You just need to select two options, or you can ask me to approve
 another idea; however, it must be done with this repository no exceptions.
 
+Note: When you run the app you have to go to <host>:port/swagger-ui
+
 ### Unit Videos
 
-[Watch this]()
+[Watch this](https://youtu.be/Yt-0BWdauaI)
 
 ### Required Readings
 
@@ -25,7 +27,11 @@ another idea; however, it must be done with this repository no exceptions.
 3. [CORS Explained](https://medium.com/@baphemot/understanding-cors-18ad6b478e2b)
 4. [Marshmallow Explained](https://www.kimsereylam.com/python/2019/10/25/serialization-with-marshmallow.html)
 
-### Project Requirements:
+### Optional Readings - Required if you don't know SQLALchemy 
+1. [Help with SQL Alchemy, similar but not exactly how we do it](https://auth0.com/blog/sqlalchemy-orm-tutorial-for-python-developers/)
+2. [More or less exactly the queries you need and the code to do it](https://www.golinuxcloud.com/flask-sqlalchemy/)
+3. [SQL Alchemy RElationships](https://hackersandslackers.com/sqlalchemy-data-models/)
+### Project Requirements: (20 Points Each) 3 x 20 = 60
 
 1. You must finish the patch/put (model update) and delete methods along with the swagger spec for cities and countries.
 2. You must write tests for successful requests and error responses for item #1.
@@ -33,17 +39,19 @@ another idea; however, it must be done with this repository no exceptions.
 
 **Note** Put all the tests for this in [test_geography_project2.py](tests/test_geography_project2.py)
 
-Put your updated tests in [test_geography_project2.py](tests/test_geography_project2.py)
-
-### Project Options (Pick 2):
+### Project Options (Pick 2): (20 Points Each)  2 x 20 = 40
 
 1. Implement the token refresh for JWT as described in the previous unit, you will need to write tests for this
-2. Implement and test the pager functionality i.e. breaking down a list of records into separate pages as described
+2. Implement the token blacklist functionality with testing as described in the previous unit.
+3. Implement and test the pagination functionality i.e. breaking down a list of records into separate pages as described
    here [Smorset Pager](https://flask-smorest.readthedocs.io/en/latest/pagination.html). You will need to write tests to
    prove the pager works and research this feature.
-3. You can add a new blueprint for your own data, but don't remove geography, so that those tests pass
-4. You can try to implement Hypermedia as the Engine of Application State (HATEOAS) on the response object by changing
+4. You can add a new blueprint for your own data, but don't remove geography, so that the geography tests pass
+5. You can try to implement Hypermedia as the Engine of Application State (HATEOAS) on the response object by changing
    the schema to use flask [marshmellow jsonAPI](https://marshmallow-jsonapi.readthedocs.io/en/latest/)
+6. Add Alembic Migrations
+
+**Total Points:  60 + 40 = 100**
 
 **Note On Submission** Put the tests for the two options you select
 in [test_option_you_pick_one.py](tests/test_option_you_pick_one.py)

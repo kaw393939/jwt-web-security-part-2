@@ -4,7 +4,6 @@ from app import db
 from app.db.models import City, Country, User
 from flask_jwt_extended import create_access_token, decode_token
 
-
 def test_create_city_country(application):
     with application.app_context():
         country = Country(name="United States")

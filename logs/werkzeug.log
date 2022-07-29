@@ -149,3 +149,10 @@
 2022-07-27 06:48:03,088 [INFO] werkzeug: 127.0.0.1 - - [27/Jul/2022 06:48:03] "GET /api-spec.json HTTP/1.1" 200 -
 2022-07-27 06:48:04,193 [INFO] werkzeug: 127.0.0.1 - - [27/Jul/2022 06:48:04] "GET /swagger-ui HTTP/1.1" 200 -
 2022-07-27 06:48:04,261 [INFO] werkzeug: 127.0.0.1 - - [27/Jul/2022 06:48:04] "GET /api-spec.json HTTP/1.1" 200 -
+2022-07-29 11:59:32,959 [INFO] werkzeug: 127.0.0.1 - - [29/Jul/2022 11:59:32] "[33mGET / HTTP/1.1[0m" 404 -
+2022-07-29 11:59:43,442 [INFO] werkzeug: 127.0.0.1 - - [29/Jul/2022 11:59:43] "GET /swagger-ui HTTP/1.1" 200 -
+2022-07-29 11:59:45,267 [INFO] werkzeug: 127.0.0.1 - - [29/Jul/2022 11:59:45] "GET /api-spec.json HTTP/1.1" 200 -
+2022-07-29 12:01:43,867 [INFO] werkzeug: 127.0.0.1 - - [29/Jul/2022 12:01:43] "[35m[1mPOST /register HTTP/1.1[0m" 201 -
+2022-07-29 12:02:48,414 [INFO] werkzeug: 127.0.0.1 - - [29/Jul/2022 12:02:48] "POST /auth HTTP/1.1" 200 -
+2022-07-29 12:03:12,843 [INFO] werkzeug: 127.0.0.1 - - [29/Jul/2022 12:03:12] "[31m[1mGET /user_info HTTP/1.1[0m" 401 -
+2022-07-29 12:05:49,276 [INFO] werkzeug: 127.0.0.1 - - [29/Jul/2022 12:05:49] "GET /user_info HTTP/1.1" 200 -
